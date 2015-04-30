@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  compile "com.mysema.querydsl:querydsl-jpa:3.6.3"
+
+  compile "com.mysema.querydsl:querydsl-apt:3.6.3:jpa" // Magic happens here
+  
+  compile "org.hibernate:hibernate-entitymanager:4.3.5.Final"
+  
+  compile 'com.h2database:h2:1.4.187'
+}
